@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    app: filebeat
+  name: elk-crt
+  namespace: kube-system
+data:
+  cert.crt: |-
+    -----BEGIN CERTIFICATE-----
+    DITCCAgmgAwIBAgIUGJr0ZuJkoce0cKFk8oOAuGbTYAAwDQYJKoZIhvcNAQEL
+    ***
+    431eskRb3DFLlihAbD5QEkpGL8Kx6JHT4GTKsmRRgNdPvzhzjA==
+    -----END CERTIFICATE-----

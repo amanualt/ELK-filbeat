@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    app: filebeat
+  name: elk-key
+  namespace: kube-system
+data:
+  cert.key: |-
+    -----BEGIN PRIVATE KEY-----
+    DANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDVYqlPJFA6Et2s/S
+    ***
+    7huASHnnweC7iUF5QPUsoq0jQ9WI=
+    -----END PRIVATE KEY-----
